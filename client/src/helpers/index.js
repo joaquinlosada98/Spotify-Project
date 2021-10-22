@@ -1,0 +1,1 @@
+export const convert = (input, n) => input.length > n ? `${input.substring(0, n)}...` : input;

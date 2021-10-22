@@ -1,0 +1,30 @@
+section {
+    min-height: 100vh; 
+    padding: 100px 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;  
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.button-top {
+    position:fixed;
+    bottom: .5em;
+    right: .5em;
+    z-index: 100;
+    font-size: 2.5rem;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.button-top:hover {
+    opacity: .9;
+}

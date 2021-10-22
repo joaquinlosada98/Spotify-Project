@@ -1,0 +1,128 @@
+.form-create {
+    background-color: var(--clr-grey-dark);
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 700px;
+    max-width: 100%;
+    padding: 1em;
+}
+.form-create h3 { 
+    color: var(--clr-sand);
+    margin: 0 0 .5em;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.form-create-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    width: 100%;
+    min-height: 4em;
+}
+
+.col:first-of-type{
+    background-color: var(--clr-grey-medium);
+    box-shadow: 5px 5px 10px #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.inputs input {
+    background-color: var(--clr-grey-medium);
+    outline: none !important;
+    color: var(--clr-sand);
+    border: none;
+    padding: .5em .5em;
+    font-size: 1.1rem;
+    margin-bottom: .7em;
+    box-shadow: 5px 5px 10px #292929;
+}
+
+.inputs textarea{
+    outline: none !important;
+    box-shadow: 5px 5px 10px #292929;
+    border: none;
+    padding: .5em .6em;
+    font-size: 0.9rem;
+    color: var(--clr-sand);
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3e3e3e;
+}
+
+.form-create-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-create-button p {
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+.form-create-button button {
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 1rem;
+    padding: .6em 1.5em;
+
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.8s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.form-create-button button:hover {
+    box-shadow: 0 15px 25px #141414;
+    transform: translateY(-3px);
+}
+
+@media (min-width: 600px) {
+    .form-create-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+
+    .col {
+        width: 59%;
+    }
+
+    .col:first-of-type{
+        width: 38%;
+    }
+
+    .inputs {
+        margin-top: 0;
+    }
+
+    .inputs input {
+        height: 22%;
+        padding: 0 .5em;
+        margin-bottom: 1em;
+    }
+
+    .inputs textarea{
+        height: 78%;
+    }
+
+    .form-create-button {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+}

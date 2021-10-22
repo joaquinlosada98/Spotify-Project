@@ -1,0 +1,86 @@
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+
+    background-image: url('../../../Images/fondo4.png');
+    background-size: cover;
+    background-position: center;
+}
+.main-cards {
+    height: 600px;
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    height: 100%;
+    max-width: 350px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--clr-green);
+    border-radius: 10px;
+
+    background-color: var(--clr-black);
+    opacity: .8;
+
+    cursor: pointer;
+    transition: 1s  all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card + .card {
+    margin-top: 1em;
+}
+
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+.card:hover, .card:focus { 
+    background-color: #1d9748;
+    border-color: #1d9748;
+    opacity: .9;
+}
+
+
+@media (min-width: 600px) { 
+
+    .main-cards {
+        height: 400px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        max-width: 300px;
+        width: 100%;
+        justify-content: flex-start;  
+    }
+
+    .card + .card {
+        margin-top: 0;
+        margin-left: .5em;
+    }
+
+    .card h3 {
+        margin-bottom: 5em;
+    }
+    
+}

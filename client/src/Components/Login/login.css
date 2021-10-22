@@ -1,0 +1,80 @@
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-text { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.login-text h2, .login-text h4 {
+    opacity: 0;
+    margin: 0 0 20px 0;
+}
+
+.login-text h2{ 
+    font-size: 3rem;
+    animation: MainAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+
+}
+
+.login-text h4 {
+    font-size: 1.7rem;
+    text-align: center;
+    animation: MainAnimation 3s 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+
+}
+
+.btn-login {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5em 1em;
+    border: 2px solid #1DB954;
+    border-radius: 10px;
+    color: #fcfcfc;
+    transition:0.8s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    animation: MainAnimation 3s 1.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-login:hover, .btn-login:focus{
+    color: white;
+    background-color: #1DB954;
+}
+
+
+@keyframes MainAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media (min-width: 600px) {
+    .login-text { 
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .login-text h2{ 
+        margin-right: 0.30em;
+    }
+
+    .login-text h4 {
+        font-size: 2rem;
+    }
+}
