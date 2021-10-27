@@ -15,7 +15,6 @@ const Main = () => {
         let valueScroll;
         await dispatch(actSetForm(value));
 
-        // Envio accion al store 
         if(value === "select"){
             valueScroll = document.getElementsByClassName("select-form-header")[0].offsetTop;
             // valueScroll = 822;
