@@ -13,8 +13,10 @@ const SelectForm = ({SpotifyApi}) => {
 
     const [playlists, setPlaylists] = useState([]);
 
-    // Component did mount -> recibir las playlist
+    // Recibir las playlist
     useEffect(() => {
+        if (!SpotifyApi.getAccessToken()) return 
+        
         dispatch(actGetPlaylists(SpotifyApi))
 
     }, [dispatch, SpotifyApi])
